@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-image: url(./img/poster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Merriweather", serif;
+    color: aliceblue;
+}
+  
+.container {
+    height: 100vh;
+    max-width: 100vw;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.titulo-principal {
+    font-size: 40px;
+    font-weight: 400;
+}
+  
+.contagem {
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 70px;
+    text-shadow: 0 0 10px aliceblue;
+}
+  
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+  
+button {
+    padding: 8px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+button:hover {
+    background-color: rgba(250, 252, 253, 0.6);
+}
+
+@media screen and (max-width:780px) {
+ 
+    .titulo-principal{
+        font-size: 25px;
+    }
+
+    .contagem {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
